@@ -1,4 +1,4 @@
-package com.example.hdwitzys.ui.gallery;
+package com.example.hdwitzys.ui.locations;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.hdwitzys.databinding.FragmentGalleryBinding;
+import com.example.hdwitzys.databinding.FragmentLocationsBinding;
 
-public class GalleryFragment extends Fragment {
+public class LocationsFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentLocationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        LocationsViewModel slideshowViewModel =
+                new ViewModelProvider(this).get(LocationsViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentLocationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textSlideshow;
+        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
