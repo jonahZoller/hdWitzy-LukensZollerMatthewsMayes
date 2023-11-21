@@ -23,9 +23,6 @@ public class MenuFragment extends Fragment {
 
         binding = FragmentMenuBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
