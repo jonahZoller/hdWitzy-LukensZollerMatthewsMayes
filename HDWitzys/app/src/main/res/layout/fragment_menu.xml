@@ -6,15 +6,176 @@
     android:layout_height="match_parent"
     tools:context=".ui.menu.MenuFragment">
 
-    <ImageView
-        android:id="@+id/menuTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/menutitle"
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="713dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/menuTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menutitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/comboImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/burgergaming" />
+
+                    <Button
+                        android:id="@+id/comboBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:text="Combos" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/sandwichImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+                    <Button
+                        android:id="@+id/sandwichBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sandwiches"
+                        android:backgroundTint="@color/teal_700"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/sidesImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+                    <Button
+                        android:id="@+id/sidesBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sides"
+                        android:backgroundTint="@color/teal_700"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/drinksImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        app:srcCompat="@drawable/icecreamgaming" />
+
+                    <Button
+                        android:id="@+id/drinksBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Drinks"
+                        android:backgroundTint="@color/teal_700"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/desertImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/sandwichgaming" />
+
+                    <Button
+                        android:id="@+id/desertBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Desert"
+                        android:backgroundTint="@color/teal_700"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/otherImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        app:srcCompat="@drawable/sandwichgaming" />
+
+                    <Button
+                        android:id="@+id/otherBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Specialities"
+                        android:backgroundTint="@color/teal_700"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
