@@ -10,4 +10,6 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Menu</string>
     <string name="menu_slideshow">Locations</string>
+    <string name="combos">Combos</string>
+    <string name="sandwiches">Sandwiches</string>
 </resources>

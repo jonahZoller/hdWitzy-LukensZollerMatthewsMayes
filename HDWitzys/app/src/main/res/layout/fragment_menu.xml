@@ -7,8 +7,10 @@
     tools:context=".ui.menu.MenuFragment">
 
     <ScrollView
+        android:id="@+id/sv1"
         android:layout_width="410dp"
         android:layout_height="713dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -16,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/ll1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -27,11 +30,13 @@
                 android:src="@drawable/menutitle" />
 
             <LinearLayout
+                android:id="@+id/hl1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/ll2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -50,10 +55,11 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:backgroundTint="@color/teal_700"
-                        android:text="Combos" />
+                        android:text="@string/combos" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -63,33 +69,35 @@
                         android:id="@+id/sandwichImage"
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
-                        app:srcCompat="@drawable/ic_launcher_foreground"
-                        tools:srcCompat="@drawable/ic_launcher_foreground" />
+                        app:srcCompat="@drawable/sandwichgaming"
+                        tools:srcCompat="@drawable/sandwichgaming" />
 
                     <Button
                         android:id="@+id/sandwichBTN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sandwiches"
-                        android:backgroundTint="@color/teal_700"/>
+                        android:backgroundTint="@color/teal_700"
+                        android:text="@string/sandwiches" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/lh2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/ll4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/sidesImage"
+                        android:id="@+id/specialtiesImage"
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
                         android:layout_weight="1"
@@ -97,35 +105,112 @@
                         tools:srcCompat="@drawable/ic_launcher_foreground" />
 
                     <Button
-                        android:id="@+id/sidesBTN"
+                        android:id="@+id/specialtiesBTN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Sides"
-                        android:backgroundTint="@color/teal_700"/>
+                        android:backgroundTint="@color/teal_700"
+                        android:text="Specialties" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/drinksImage"
+                        android:id="@+id/HotdogsImage"
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
                         app:srcCompat="@drawable/icecreamgaming" />
 
                     <Button
-                        android:id="@+id/drinksBTN"
+                        android:id="@+id/hotdogsBTN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Drinks"
-                        android:backgroundTint="@color/teal_700"/>
+                        android:backgroundTint="@color/teal_700"
+                        android:text="Hotdogs" />
                 </LinearLayout>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lh3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dessertImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/sandwichgaming" />
+
+                    <Button
+                        android:id="@+id/dessertBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:text="Dessert" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/saladImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        app:srcCompat="@drawable/sandwichgaming" />
+
+                    <Button
+                        android:id="@+id/saladBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/teal_700"
+                        android:text="Salads" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llCombo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/mtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menutitle" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -135,45 +220,64 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/desertImage"
+                    <CheckBox
+                        android:id="@+id/cbCombo1"
                         android:layout_width="match_parent"
-                        android:layout_height="164dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/sandwichgaming" />
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Combo #1 : Cheeseburger, Fries, Medium Drink"
+                        android:textSize="18dp" />
 
-                    <Button
-                        android:id="@+id/desertBTN"
+                    <CheckBox
+                        android:id="@+id/cbCombo2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Desert"
-                        android:backgroundTint="@color/teal_700"/>
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Combo #2 : Grilled Chicken Sandwich, Fries, Medium Drink"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCombo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Combo #3 : Double Witz with Cheese, Fries, Medium Drink"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCombo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Combo #4 : Hotdog, Fries, Medium Drink"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCombo5"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Witz Combo Basket : Double Witz with Cheese, Cole Slaw, Medium Drink"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCombo6"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Cool Deal : Hamburger, Fries, Medium Drink, Scoop of Ice Cream"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCombo7"
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:padding="2dp"
+                        android:text="Itzy Ritzy for Kids : Choice of a Hamburger, Cheeseburger, Grilled Cheese or Hot Dog, Small Fry, Small Drink and a Junior Scoop of Ice Cream."
+                        android:textSize="18dp" />
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/otherImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="164dp"
-                        app:srcCompat="@drawable/sandwichgaming" />
-
-                    <Button
-                        android:id="@+id/otherBTN"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Specialities"
-                        android:backgroundTint="@color/teal_700"/>
-                </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
