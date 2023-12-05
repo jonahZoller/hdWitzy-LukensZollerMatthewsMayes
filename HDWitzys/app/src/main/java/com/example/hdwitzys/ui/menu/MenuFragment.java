@@ -5,9 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.CheckBox;
 import android.widget.ScrollView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -22,14 +21,9 @@ public class MenuFragment extends Fragment {
 
     private FragmentMenuBinding binding;
 
-    private Button combos;
-    private Button sandwich;
-    private Button specialties;
-    private Button hotdogs;
-    private Button desserts;
-    private Button salads;
-    private ScrollView scroll;
-    private LinearLayout comboTest;
+    private Button combos, sandwich, specialties, hotdogs, desserts, salads;
+    private ScrollView scroll, comboSV, sandwichSV;
+    private CheckBox c1, c2, c3, c4, c5, c6, c7;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -52,7 +46,8 @@ public class MenuFragment extends Fragment {
         ArrayList<String> saladList = new ArrayList<String>();
 
         scroll = rootView.findViewById(R.id.sv1);
-        comboTest = rootView.findViewById(R.id.ll)
+        comboSV = rootView.findViewById(R.id.sv2);
+        sandwichSV = rootView.findViewById(R.id.sv3);
 
         sandwich = rootView.findViewById(R.id.sandwichBTN);
         combos = rootView.findViewById(R.id.comboBTN);
@@ -63,6 +58,8 @@ public class MenuFragment extends Fragment {
 
         //setting the scroll view back to visible
         scroll.setVisibility(View.VISIBLE);
+        comboSV.setVisibility(View.GONE);
+        sandwichSV.setVisibility(View.GONE);
         //setting combo visible
 
 
@@ -116,7 +113,7 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 scroll.setVisibility(View.GONE);
-
+                sandwichSV.setVisibility(View.VISIBLE);
             }
         });
 
@@ -124,7 +121,7 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 scroll.setVisibility(View.GONE);
-
+                comboSV.setVisibility(View.VISIBLE);
             }
         });
 
