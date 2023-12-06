@@ -97,7 +97,12 @@ public class CheckoutActivity extends AppCompatActivity {
 
         String writeToText = "";
         for (int i = 0; i < userOrder.size(); i++) {
-            writeToText += userOrder.get(i) + " ";
+            for (int j = 0; j < foodPrices.size(); j++) {
+                if (userOrder.get(i).equals(foodList.get(j))){
+                    writeToText += "\n" +userOrder.get(i) + ": " + foodPrices.get(j);
+                }
+            }
+
         }
 
         OrderTXT.setText("Your order: "+writeToText);
