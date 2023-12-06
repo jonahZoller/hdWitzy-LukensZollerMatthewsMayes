@@ -2,9 +2,13 @@ package com.example.hdwitzys.ui.checkout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.hdwitzys.MainActivity;
 import com.example.hdwitzys.R;
 
 import java.lang.reflect.Array;
@@ -13,6 +17,7 @@ import java.util.ArrayList;
 public class CheckoutActivity extends AppCompatActivity {
 
     private TextView OrderTXT,PriceTXT;
+    private Button homeBTN;
     public Double userPrice = 0.00;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +26,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
         OrderTXT = findViewById(R.id.userOrder);
         PriceTXT = findViewById(R.id.userTotal);
+        homeBTN = findViewById(R.id.homeBTN);
         ArrayList<String> userOrder = getIntent().getStringArrayListExtra("userOrder");
         ArrayList<String> foodList = getIntent().getStringArrayListExtra("foodList");
         ArrayList<Double> foodPrices = new ArrayList<Double>();
@@ -74,10 +80,6 @@ public class CheckoutActivity extends AppCompatActivity {
 
 
 
-
-
-
-
         for (int i = 0; i < userOrder.size(); i++) {
             for (int j = 0; j < foodPrices.size(); j++) {
                 if (userOrder.get(i).equals(foodList.get(j))){
@@ -90,7 +92,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
         }
 
-        PriceTXT.setText(Double.toString(userPrice));
+        PriceTXT.setText("Total Price: "+Double.toString(userPrice));
 
 
 
@@ -107,6 +109,12 @@ public class CheckoutActivity extends AppCompatActivity {
 
         OrderTXT.setText("Your order: "+writeToText);
 
+        homeBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 }
