@@ -220,6 +220,12 @@ public class MenuFragment extends Fragment {
         foodList.add("Butter Pecan");
         foodList.add("Caramel Praline");
         foodList.add("Black Forest Cherry");
+        foodList.add("Banana Split Addition");
+        foodList.add("Double Scoop");
+        foodList.add("Triple Scoop");
+        foodList.add("Shakes");
+        foodList.add("pint");
+        foodList.add("quart");
         //salads list
         foodList.add("Choice Garden Salad");
         foodList.add("Deluxe Garden Salad");
@@ -412,6 +418,7 @@ public class MenuFragment extends Fragment {
                 Intent i = new Intent(getActivity(), CheckoutActivity.class);
 
                 i.putStringArrayListExtra("userOrder",userOrder);
+                i.putStringArrayListExtra("foodList",foodList);
 
                 startActivity(i);
             }
