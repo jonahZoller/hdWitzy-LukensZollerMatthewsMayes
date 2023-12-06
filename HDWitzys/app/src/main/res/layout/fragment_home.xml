@@ -6,81 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="278dp"
-        android:padding="10dp"
-        android:text="Here at HD Witzy's, we are dedicated to giving you the best fast food experience possible. We strive to make each meal special, whether ordering individually or for a party. We offer a variety of food, and delicious deserts. Check out our menu to pick your perfect meal. Our fries are fresh cut and our world famous hamburgers are served hot off the grill. Our pride and joy is our high quality ice cream served cold with a vast assortment of toppings."
-        android:textColor="#104030"
-        android:textSize="19dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="426dp"
-        android:layout_height="182dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/side_nav_bar"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" >
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="171dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="18dp"
-        android:src="@drawable/hdwitzylogo"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="183dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/burgergaming"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
-        app:layout_constraintStart_toStartOf="parent" />
+            <ImageView
+                android:id="@+id/witzysLogo"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:background="@color/teal_700"
+                android:src="@drawable/hdwitzylogo" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="181dp"
-        android:layout_height="134dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/icecreamgaming"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            <ImageView
+                android:id="@+id/hdSlogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hdslogan" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="187dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/sandwichgaming"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="184dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/tacogaming"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="183dp"
+                    android:layout_height="137dp"
+                    android:src="@drawable/burgergaming" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="183dp"
+                    android:layout_height="137dp"
+                    android:src="@drawable/icecreamgaming" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Here at HD Witzy's, we are dedicated to giving you the best fast food experience possible. We strive to make each meal special, whether ordering individually or for a party. We offer a variety of food, and delicious deserts. Check out our menu to pick your perfect meal. Our fries are fresh cut and our world famous hamburgers are served hot off the grill. Our pride and joy is our high quality ice cream served cold with a vast assortment of toppings."
+                android:textColor="#104030"
+                android:textSize="19dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="187dp"
+                    android:layout_height="119dp"
+                    android:src="@drawable/sandwichgaming" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="187dp"
+                    android:layout_height="119dp"
+                    android:src="@drawable/tacogaming" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
