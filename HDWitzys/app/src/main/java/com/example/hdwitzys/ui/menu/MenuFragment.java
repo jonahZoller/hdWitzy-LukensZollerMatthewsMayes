@@ -19,14 +19,12 @@ import java.util.ArrayList;
 
 public class MenuFragment extends Fragment {
 
-    private FragmentMenuBinding binding;
-
-    private Button combos, sandwich, specialties, hotdogs, desserts, salads, back, back2, back3, back4, back5;
+    private Button combos, sandwich, specialties, hotdogs, desserts, salads, back, back2, back3, back4, back5, back6;
     private ScrollView scroll, comboSV, sandwichSV, specialtySV, hotdogSV, dessertSV, saladSV;
     private CheckBox c1, c2, c3, c4, c5, c6, c7, s1, s2, s3 ,s4, s5, sp1, sp2, sp3, h1, h2, h3, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, isplit, ix2, ix3, pint, quart, shake;
     //all of the letters correspond to where the checkboxes are held
     // c = combos | s = sandwiches | sp = specialties | h = hotdogs | i = icecream | sa = salads
-    //isplit 
+    //isplit - banana split | ix[num] = num of scoops for ice cream | pints and quarts are self explanatory
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -55,6 +53,7 @@ public class MenuFragment extends Fragment {
         specialtySV = rootView.findViewById(R.id.sv4);
         hotdogSV = rootView.findViewById(R.id.sv5);
         dessertSV = rootView.findViewById(R.id.sv6);
+        saladSV = rootView.findViewById(R.id.sv7);
 
 
         //buttons
@@ -63,6 +62,7 @@ public class MenuFragment extends Fragment {
         back3 = rootView.findViewById(R.id.btnBack3);
         back4 = rootView.findViewById(R.id.btnBack4);
         back5 = rootView.findViewById(R.id.btnBack5);
+        back6 = rootView.findViewById(R.id.btnBack6);
 
         sandwich = rootView.findViewById(R.id.sandwichBTN);
         combos = rootView.findViewById(R.id.comboBTN);
@@ -78,6 +78,7 @@ public class MenuFragment extends Fragment {
         specialtySV.setVisibility(View.GONE);
         hotdogSV.setVisibility(View.GONE);
         dessertSV.setVisibility(View.GONE);
+        saladSV.setVisibility(View.GONE);
         //setting combo visible
 
 
@@ -130,48 +131,48 @@ public class MenuFragment extends Fragment {
         sandwich.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.GONE);
                 sandwichSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.GONE);
             }
         });
 
         combos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.GONE);
                 comboSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.GONE);
             }
         });
 
         specialties.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.GONE);
                 specialtySV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.GONE);
             }
         });
 
         hotdogs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.GONE);
                 hotdogSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.GONE);
             }
         });
 
         desserts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.GONE);
                 dessertSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.GONE);
             }
         });
 
         salads.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.GONE);
                 saladSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.GONE);
             }
         });
 
@@ -180,65 +181,48 @@ public class MenuFragment extends Fragment {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.VISIBLE);
                 comboSV.setVisibility(View.GONE);
-                sandwichSV.setVisibility(View.GONE);
-                specialtySV.setVisibility(View.GONE);
-                hotdogSV.setVisibility(View.GONE);
-                dessertSV.setVisibility(View.VISIBLE);
-                saladSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.VISIBLE);
             }
         });
 
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.VISIBLE);
-                comboSV.setVisibility(View.GONE);
                 sandwichSV.setVisibility(View.GONE);
-                specialtySV.setVisibility(View.GONE);
-                hotdogSV.setVisibility(View.GONE);
-                dessertSV.setVisibility(View.VISIBLE);
-                saladSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.VISIBLE);
             }
         });
 
         back3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.VISIBLE);
-                comboSV.setVisibility(View.GONE);
-                sandwichSV.setVisibility(View.GONE);
                 specialtySV.setVisibility(View.GONE);
-                hotdogSV.setVisibility(View.GONE);
-                dessertSV.setVisibility(View.VISIBLE);
-                saladSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.VISIBLE);
             }
         });
 
         back4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                scroll.setVisibility(View.VISIBLE);
-                comboSV.setVisibility(View.GONE);
-                sandwichSV.setVisibility(View.GONE);
-                specialtySV.setVisibility(View.GONE);
                 hotdogSV.setVisibility(View.GONE);
-                dessertSV.setVisibility(View.VISIBLE);
-                saladSV.setVisibility(View.VISIBLE);
+                scroll.setVisibility(View.VISIBLE);
             }
         });
 
         back5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dessertSV.setVisibility(View.GONE);
                 scroll.setVisibility(View.VISIBLE);
-                comboSV.setVisibility(View.GONE);
-                sandwichSV.setVisibility(View.GONE);
-                specialtySV.setVisibility(View.GONE);
-                hotdogSV.setVisibility(View.GONE);
-                dessertSV.setVisibility(View.VISIBLE);
-                saladSV.setVisibility(View.VISIBLE);
+            }
+        });
+
+        back6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saladSV.setVisibility(View.GONE);
+                scroll.setVisibility(View.VISIBLE);
             }
         });
 
@@ -249,6 +233,6 @@ public class MenuFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+        com.example.hdwitzys.databinding.FragmentMenuBinding binding = null;
     }
 }
