@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.hdwitzys.MainActivity;
 import com.example.hdwitzys.R;
@@ -112,8 +113,10 @@ public class CheckoutActivity extends AppCompatActivity {
         homeBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Your order is being prepared!", Toast.LENGTH_LONG).show();
                 finish();
             }
+
         });
 
     }
