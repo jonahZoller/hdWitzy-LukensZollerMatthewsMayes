@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:visibility="visible">
+        tools:visibility="gone">
 
         <LinearLayout
             android:id="@+id/ll1"
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Order"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
 
             <LinearLayout
                 android:id="@+id/hl1"
@@ -209,7 +209,7 @@
         android:id="@+id/sv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -247,7 +247,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="Combo #1 : Cheeseburger, Fries, Medium Drink"
+                        android:text="Combo #1 : Cheeseburger, Fries, Medium Drink  $10.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -255,7 +255,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="Combo #2 : Grilled Chicken Sandwich, Fries, Medium Drink"
+                        android:text="Combo #2 : Grilled Chicken Sandwich, Fries, Medium Drink $10.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -263,7 +263,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="Combo #3 : Double Witz with Cheese, Fries, Medium Drink"
+                        android:text="Combo #3 : Double Witz with Cheese, Fries, Medium Drink $12.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -271,7 +271,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="Combo #4 : Hotdog, Fries, Medium Drink"
+                        android:text="Combo #4 : Hotdog, Fries, Medium Drink $9.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -279,7 +279,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="Witz Combo Basket : Double Witz with Cheese, Cole Slaw, Medium Drink"
+                        android:text="Witz Combo Basket : Double Witz with Cheese, Cole Slaw, Medium Drink $12.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -287,7 +287,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="Cool Deal : Hamburger, Fries, Medium Drink, Scoop of Ice Cream"
+                        android:text="Cool Deal : Hamburger, Fries, Medium Drink, Scoop of Ice Cream $15.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -295,7 +295,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="106dp"
                         android:padding="2dp"
-                        android:text="Itzy Ritzy for Kids : Choice of a Hamburger, Cheeseburger, Grilled Cheese or Hot Dog, Small Fry, Small Drink and a Junior Scoop of Ice Cream."
+                        android:text="Itzy Ritzy for Kids : Choice of a Hamburger, Cheeseburger, Grilled Cheese or Hot Dog, Small Fry, Small Drink and a Junior Scoop of Ice Cream. $13.00"
                         android:textSize="18dp" />
 
                     <Button
