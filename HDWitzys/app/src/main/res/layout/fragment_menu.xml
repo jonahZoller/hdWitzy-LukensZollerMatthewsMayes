@@ -10,7 +10,7 @@
         android:id="@+id/sv1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/burgergaming" />
+                        app:srcCompat="@drawable/combos" />
 
                     <Button
                         android:id="@+id/comboBTN"
@@ -68,8 +68,8 @@
                         android:id="@+id/sandwichImage"
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
-                        app:srcCompat="@drawable/sandwichgaming"
-                        tools:srcCompat="@drawable/sandwichgaming" />
+                        app:srcCompat="@drawable/sandwich"
+                        tools:srcCompat="@drawable/sandwich" />
 
                     <Button
                         android:id="@+id/sandwichBTN"
@@ -100,8 +100,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_launcher_foreground"
-                        tools:srcCompat="@drawable/ic_launcher_foreground" />
+                        app:srcCompat="@drawable/specialities"
+                        tools:srcCompat="@drawable/specialities" />
 
                     <Button
                         android:id="@+id/specialtiesBTN"
@@ -123,7 +123,7 @@
                         android:id="@+id/HotdogsImage"
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
-                        app:srcCompat="@drawable/icecreamgaming" />
+                        app:srcCompat="@drawable/hotdog" />
 
                     <Button
                         android:id="@+id/hotdogsBTN"
@@ -153,7 +153,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/sandwichgaming" />
+                        app:srcCompat="@drawable/icecream" />
 
                     <Button
                         android:id="@+id/dessertBTN"
@@ -175,7 +175,7 @@
                         android:id="@+id/saladImage"
                         android:layout_width="match_parent"
                         android:layout_height="164dp"
-                        app:srcCompat="@drawable/sandwichgaming" />
+                        app:srcCompat="@drawable/salad" />
 
                     <Button
                         android:id="@+id/saladBTN"
@@ -535,7 +535,7 @@
         android:id="@+id/sv6"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
