@@ -31,6 +31,13 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/menutitle" />
 
+            <TextView
+                android:id="@+id/OrderTXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Order"
+                android:textAlignment="center"/>
+
             <LinearLayout
                 android:id="@+id/hl1"
                 android:layout_width="match_parent"
@@ -763,7 +770,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="#1 : Vanilla Bean - $4.00"
+                        android:text="#1 : Choice Garden Salad - $4.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -771,7 +778,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="#2 : Chocolate Fudge $4.00"
+                        android:text="#2 : Deluxe Garden Salad $4.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -779,7 +786,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="#3 :  Mint Chip $4.00"
+                        android:text="#3 :  Side Salad $4.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -787,7 +794,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="#4 : Orange Sherbet $4.00"
+                        android:text="#4 : Taco Salad $4.00"
                         android:textSize="18dp" />
 
                     <CheckBox
@@ -795,7 +802,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:padding="2dp"
-                        android:text="#5 :  Raspberry Sorbet $4.00"
+                        android:text="#5 :  Chicken Salad $4.00"
                         android:textSize="18dp" />
 
                     <Button
