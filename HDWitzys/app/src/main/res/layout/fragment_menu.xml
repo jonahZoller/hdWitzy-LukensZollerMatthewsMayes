@@ -381,4 +381,333 @@
         </LinearLayout>
     </ScrollView>
 
+    <ScrollView
+        android:id="@+id/sv4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/llSpecialties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/mtSpTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menutitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="468dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbSpecialty1"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#1 : World Best PB&amp;J $1.50"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbSpecialty2"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#2 : Shoestring Fries  $1.50"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbSpecialty3"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#3 : Steamed Vegetables $1.00"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/btnBack3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="Go Back To Menu" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/llHotdogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/mtHTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menutitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="468dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbHotdog1"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#1 : All American Hotdog $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbHotdog2"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#2 : Coney Dog $4.50"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbHotdog3"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#3 : Coney Dog with Cheese $5.00"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/btnBack4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="Go Back To Menu" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/llDesserts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/mtDTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menutitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbDessert1"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#1 : Vanilla Bean - $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert2"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#2 : Chocolate Fudge $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert3"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#3 :  Mint Chip $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert4"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#4 : Orange Sherbet $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert5"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#5 :  Raspberry Sorbet $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert6"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#6 :  Cookie Dough $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert7"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#7 : Strawberry $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert8"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#8 : Butter Pecan $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert9"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#9 : Caramel Praline $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDessert10"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="#10 : Black Forest Cherry $4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbSplit"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Banana Split Addition +$4.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbDouble"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Double Scoop +$2.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbTriple"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Triple Scoop +$3.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbShake"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="Shakes (any flavor) $7.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbPint"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="pint size +$10.00"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbQuart"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:text="quart size +$15.00"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/btnBack5"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="Go Back To Menu" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
