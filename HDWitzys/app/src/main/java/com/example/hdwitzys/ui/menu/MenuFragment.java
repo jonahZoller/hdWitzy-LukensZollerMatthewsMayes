@@ -1,5 +1,6 @@
 package com.example.hdwitzys.ui.menu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,13 +14,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.hdwitzys.R;
-import com.example.hdwitzys.databinding.FragmentMenuBinding;
+import com.example.hdwitzys.ui.checkout.CheckoutActivity;
 
 import java.util.ArrayList;
 
 public class MenuFragment extends Fragment {
 
-    private Button combos, sandwich, specialties, hotdogs, desserts, salads, back, back2, back3, back4, back5, back6;
+    private Button combos, sandwich, specialties, hotdogs, desserts, salads, back, back2, back3, back4, back5, back6, toCheckout;
     private ScrollView scroll, comboSV, sandwichSV, specialtySV, hotdogSV, dessertSV, saladSV;
     private CheckBox c1, c2, c3, c4, c5, c6, c7, s1, s2, s3 ,s4, s5, sp1, sp2, sp3, h1, h2, h3, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, isplit, ix2, ix3, pint, quart, shake;
     //all of the letters correspond to where the checkboxes are held
@@ -57,6 +58,8 @@ public class MenuFragment extends Fragment {
 
 
         //buttons
+        toCheckout = rootView.findViewById(R.id.toCheckoutBTN);
+
         back = rootView.findViewById(R.id.btnBack);
         back2 = rootView.findViewById(R.id.btnBack2);
         back3 = rootView.findViewById(R.id.btnBack3);
@@ -223,6 +226,15 @@ public class MenuFragment extends Fragment {
             public void onClick(View v) {
                 saladSV.setVisibility(View.GONE);
                 scroll.setVisibility(View.VISIBLE);
+            }
+        });
+
+        toCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), CheckoutActivity.class);
+
+                startActivity(i);
             }
         });
 
